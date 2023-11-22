@@ -38,11 +38,13 @@
 <h1>Welcome To My Site!</h1>
 <p1>There Is Mostly Minecraft Here, I May Change That In The Future! <b>Warning : This Site Is Still A WIP. Things May Change In The Future!</b></p1>
 <div1>
+<a id="mclink" href="https://o-gui-blindao.github.io/Minecraft" style="display: none;"></a>
 <button onclick="MinecraftRedirect()">Minecraft Online (Eaglercraft)</button>
 </div1>
 
 <script>
  function MinecraftRedirect() {
-  location.replace("https://o-gui-blindao.github.io/Minecraft");
+  var mclink = document.getElementById("mclink").href;
+  window.location.href = mclink;
  }
 </script>
