@@ -1,0 +1,53 @@
+<style>
+ body {
+   padding:25px;
+   background-color: black;
+   color: white;
+   font-size: 15px;
+ }
+
+ .light-mode {
+   background-color: white;
+   color: black;
+ }
+ .top-part {
+	width: 120px;
+    overflow: scroll;
+    border: 0px;
+    clear: both;
+    float: right;
+ }
+ .gameSelector {
+ 	width: 720px;
+    overflow: scroll;
+    border: 0px;
+    clear: both;
+    float: left;
+   }
+</style>
+<div class="top-part">
+<button onclick="DarkModeSwitcher()">Toggle dark mode</button>
+</div>
+
+<script>
+ function DarkModeSwitcher() {
+   var element = document.body;
+   element.classList.toggle("light-mode");
+ }
+</script>
+
+<h>Welcome To My Site!</h>
+<p>There Is Mostly Minecraft Here, I May Change That In The Future! <b>Warning : This Site Is Still A WIP. Things May Change In The Future!</b></p>
+
+<div class="gameSelector">
+<a id="mclink" href="https://o-gui-blindao.github.io/index1.html" style="display: none;"></a>
+
+<button onclick="MinecraftRedirect()">Minecraft Online (Eaglercraft)</button>
+</div>
+
+<script>
+ function MinecraftRedirect() {
+  var mclink = document.getElementById("mclink").href;
+  window.location.href = mclink;
+ }
+</script>
