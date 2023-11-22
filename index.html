@@ -10,8 +10,24 @@
    background-color: white;
    color: black;
  }
+ div {
+	width: 120px;
+    overflow: hidden;
+    border: 0px;
+    clear: both;
+    float: right;
+ }
+ div1 {
+ 	width: 720;
+    overflow: hidden;
+    border: 0px;
+    clear: both;
+    float: left;
+   }
 </style>
+<div>
 <button onclick="DarkModeSwitcher()">Toggle dark mode</button>
+</div>
 <script>
  function DarkModeSwitcher() {
    var element = document.body;
@@ -21,7 +37,9 @@
 
 <h1>Welcome To My Site!</h1>
 <p1>There Is Mostly Minecraft Here, I May Change That In The Future! <b>Warning : This Site Is Still A WIP. Things May Change In The Future!</b></p1>
+<div1>
 <button onclick="MinecraftRedirect()">Minecraft Online (Eaglercraft)</button>
+</div1>
 <script>
  function MinecraftRedirect() {
   location.replace("o-gui-blindao.github.io/Minecraft")
